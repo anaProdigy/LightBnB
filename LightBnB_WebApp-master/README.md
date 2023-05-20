@@ -1,16 +1,41 @@
 # LightBnB
 
-## Usage
+## Project Summary
 
-#### Run the project
+LightBNB is an Lighthouse Labs AirBNB clone. It is built using SASS, JS, Express, and PostgreSQL. Users can view properties, rent properties, add properties and review properties. They can also search properties by price, location or rating.
 
-1. In LighBnB_WebApp-master
-2. npm run local
+![](LightBnB.gif)
 
-#### Login
 
-username: "tristanjacobs@gmail.com"
+## Getting Started
+
+### 1. Fork(optional) and clone this repository onto your local device.
+### 2. Set up database
+#### - Connect to your database in psql. `psql -d lightbnb`
+#### - Import migrations queries to create the tables `\i migrations/01_schema.sql`
+#### - Run or import seeds quieries to populate tables `\i migrations/01_seeds.sql`, `\i migrations/02_seeds.sql`
+#### - test one of the queries from the queries folder to make shure db set up properly
+`SELECT id, name, email, password
+FROM users
+WHERE email = 'tristanjacobs@gmail.com';`
+### 3.  In LightBnB_WebApp-master folder install dependencies with `npm install`.
+
+#### Dependencies
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "pg": "^8.7.1"
+
+### 4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
+### 5. Go to <http://localhost:3000/> in your browser.
+### 6. Login
+```sh 
+Email: "tristanjacobs@gmail.com"
 Password: "password"
+
+```
 
 ## Project Structure
 

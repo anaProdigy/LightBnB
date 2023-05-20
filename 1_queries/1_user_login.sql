@@ -5,3 +5,9 @@
 SELECT id, name, email, password
 FROM users
 WHERE email = 'tristanjacobs@gmail.com';
+
+
+
+UPDATE properties
+SET thumbnail_photo_url = 'https://images.pexels.com/photos/286744/pexels-photo-286744.jpeg?auto=compress&cs=tinysrgb&h=350'
+WHERE title IN ('Stronger solution', 'Corner situation', 'Could word', 'Quietly single', 'Enjoy relationship');
